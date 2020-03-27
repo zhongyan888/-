@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style type="text/css">
+			#canvas{
+				width: 100%;
+				height: 720px;
+				background-color: rgb(107,186,15);
+				/* border: 1px solid red; */
+				background-image: linear-gradient(to bottom right, rgb(12,158,11), rgb(176,207,18));
+				margin: 0 auto;
+			}
+			#box{
+				/* position: absolute; */
+				padding-top: 160px;
+				margin-left: 510px;
+			}
+			#box1{
+				height: 50px;
+				width: 405px;
+				/* border: 1px solid red; */
+				line-height: 50px;
+				font-size: 35px;
+				padding-left: 45px;
+				font-weight: 700;
+				text-shadow: 1px 1px 5px;
+				color: rgb(8,170,234);
+			}
+			#box2{
+				height: 300px;
+				width: 485px;
+				/* border: 1px solid red; */
+				background-color: rgb(150,192,108);
+				border-radius: 10px;
+			}
+			#box3{
+				width: 344px;
+				/* border: 1px solid green; */
+				padding-left: 150px;
+			}
+			#box4{
+				height: 25px;
+				width: 400px;
+				/* border: 1px solid blue; */
+				padding-left:80px ;
+				font-size: 13px;
+				line-height: 25px;
+			}
+			#box5{
+				width: 485px;
+				height: 25px;
+				padding-left: 80px;
+				position: relative;
+				top: -115px;
+				font-size: 5px;
+				line-height: 1px;
+			}
+			#box6{
+				position: relative;
+				top: -115px;
+				padding-left: 80px;
+			}
+			#zh{
+				height: 22px;
+				width: 300px;
+				border-radius: 6px;
+			}
+			#pas{
+				height: 22px;
+				width: 300px;
+				border-radius: 6px;
+			}
+			#btn{
+				width: 300px;
+				height: 30px;
+				font-size: 17px;
+				padding-left: -8px;
+				background-color: rgb(0,123,255);
+				border-radius: 20px;
+				cursor: pointer;
+				transition: 0.8s;
+			}
+			#btn:hover{
+				background-color: #40B6EE;
+			}
+			audio{
+				position: absolute;
+				top: 1px;
+				width: 100px;
+				height: 40px;
+			}
+		</style>
+	</head>
+	<body style="margin: 0;">
+		<div id="canvas" >
+		<div id="box">
+		<div id="box1">
+			橙果工作室成员管理系统
+		</div>
+		<div id="box2">
+			<div id="box3">
+				<img src="img/齐鲁工业大学网页尺寸.png" height="70px" width="140px">
+			</div>
+			<div id="box4">
+				用户名:
+				</div>
+				<div id="box4">
+				<input type="text" id="zh" placeholder="Enter username" />
+			</div>
+			<div id="box4">
+				密码:
+				</div>
+				<div id="box4">
+				<input type="password" id="pas" placeholder="Enter password" />
+				</div>
+			</div>
+			<div id="box5">
+				<input type="checkbox" name="1" />记住密码
+			</div>
+			<div id="box6">
+				<button type="submit" id="btn">登入</button>
+			</div>
+		</div>
+		<!-- </div> -->
+		<audio src="music/心华%20-%20华心彩.mp3" autoplay="autoplay" controls="controls" >
+			当前浏览器不支持audio
+		</audio>
+		</div>
+	</body>
+	<script type="text/javascript">
+		// //canvas区域
+		// var oCanvas = document.querySelector("canvas")
+		// var ctx = canvas.getContext("2d")
+		// ctx.fillRect(50,50,10,10)
+		//判断用户名或者密码是否正确
+		var oBtn = document.getElementById("btn")
+		var oZh =document.getElementById("zh")
+		var oPas = document.getElementById("pas")
+		var zh = "123456"
+		var pas = "123456"
+		oBtn.onclick = function(){
+			var ipt_zh = oZh.value
+			var ipt_pas = oPas.value
+			if(ipt_zh === zh &&ipt_pas === pas ){
+				window.open("index.html")
+			}else{
+				alert("登入失败")
+			}
+		}
+		//鼠标悬停效果
+	</script>
+</html>

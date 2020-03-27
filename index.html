@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>橙果工作室成员管理</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="margin: 0;">
+<!-- 		<script type="text/javascript">
+			//增加信息
+			$(document).ready(function(){
+				$("#btn3").click(function(){
+					var inf = prompt("请输入信息")
+					$("ol").prepend("<div>"+inf+"</div>");
+				});
+				});
+			//删除信息
+			$(document).ready(function(){
+			  $("#btn4").click(function(){
+			    $("#td2").empty();
+			  });
+			});
+			//修改信息
+			var oBtn = document.getElementById("btn5")
+			oBtn.onclick = function(){
+				
+			}
+		</script> -->
+		<div id="box">
+			<div id="left">
+				<div id="box1">成员管理系统</div>
+				<div id="box2" onclick="pageClick(this)" class="active">信息管理</div>
+				<div id="box2" onclick="pageClick(this)" >资源管理</div>
+			</div>
+			<div id="top">
+				<div id="box3">
+					信息管理
+				</div>
+				<div id="user">
+					<a href="information.html">欢迎&nbsp XXX</a>
+				</div>
+			</div>
+			<div id="content">
+				<div style="margin-left: 50px;">
+				<div id="box4">
+					<button type="button" id="btn2">批量删除</button>
+					<button type="button" id="btn3">增加</button>
+					<input type="text"/ style="margin-left: 650px;">
+					<button type="button" value="搜索">搜索</button>
+				</div>
+				<div style="width: 100%; height: 52px; margin-top: 20px; margin-left: 10px: ;">
+				<div id="td1" style="border-left: 1px solid rgb(133,186,173);">
+					姓名
+				</div>
+				<div id="td1">
+					班级
+				</div>
+				<div id="td1">
+					学号
+				</div>
+				<div id="td1">
+					学院
+				</div>
+				<div id="td1" style="border-right: 1px solid rgb(133,186,173);" >
+					电话
+				</div>
+				</div>
+				<div style="width: 100%; height: 50px;">
+				<div id="td2">
+				
+				</div>
+				<div id="td2">
+					
+				</div>
+				<div id="td2">
+					
+				</div>
+				<div id="td2">
+					
+				</div>
+				<div id="td2">
+					
+				</div>
+				<div id="td2" style="border: none; width: 100px;" >
+					<button type="button" id="btn5">修改</button>
+					<button type="button" id="btn4">删除</button>
+				</div>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
